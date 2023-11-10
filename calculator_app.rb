@@ -29,6 +29,7 @@ class CalculatorApp
     end
     
     def show_addition_form
+        # Generate HTML form for addition
         html = <<~HTML
             <html>
             <body>
@@ -45,6 +46,7 @@ class CalculatorApp
         Rack::Response.new(html)
     end
     def perform_addition(request)
+        # Extract numbers from request parameters and perform addition
 #        data = JSON.parse(request.body.read)
         data = request.params
         a = data['a'].to_i
@@ -55,6 +57,7 @@ class CalculatorApp
         Rack::Response.new(response_data.to_json, 200, {'Content_Type' => 'application/json' })
     end
     def show_subtraction_form
+        # Generate HTML form for subtraction
         html = <<~HTML
             <html>
             <body>
@@ -71,6 +74,7 @@ class CalculatorApp
         Rack::Response.new(html)
     end
     def perform_subtraction(request)
+        # Extract numbers from request parameters and perform subtraction
         data = request.params
 #        data = JSON.parse(request.body.read)
         a = data['a'].to_i
