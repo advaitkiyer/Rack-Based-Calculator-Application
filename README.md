@@ -1,7 +1,5 @@
 <h1 align="center">Rack Calculator App</h1>
-<p align="center">
-  <img src="https://ibb.co/HFtMpJq" width=300 height=300>
-</p>
+
 <p align="center">
   <strong>A Rack-based calculator application in Ruby that performs basic arithmetic operations.</strong>
 </p>
